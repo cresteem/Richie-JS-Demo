@@ -1,2 +1,8 @@
 const { richie } = require("@cresteem/richie-js");
-richie("article", "pages/article.html", "pages/article.htm");
+const { basename, join } = require("path");
+
+const type = "article";
+const inputFile = "pages/article.html";
+const outputFile = join("./dist", basename(inputFile));
+
+richie(type, inputFile, outputFile);

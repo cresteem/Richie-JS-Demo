@@ -25,10 +25,10 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
-"@cresteem/richie-js@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@cresteem/richie-js/-/richie-js-1.0.2.tgz#6df04187834f5b9c14bf591776b3e293039e09d6"
-  integrity sha512-cgm6QR3Yrut3m1i9rc5gIA5GBb/ksuVfH7bdwGr+MWsIaUi2BgW/ZTm6BjNE7FbwJnRLOIKylwIYFphpRMmewQ==
+"@cresteem/richie-js@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@cresteem/richie-js/-/richie-js-1.0.5.tgz#ac63a8cbdf11e433021025d1052780357463744a"
+  integrity sha512-zsQfn6gnm3zUVq0WE/rtnTUfBUB15YxegIjCsbn5cy1WYNN+EfaSarJLm3F34CvpfcSgEn4yAtJ68RZyowQvfg==
   dependencies:
     "@prettier/sync" "^0.5.1"
     axios "^1.6.7"
