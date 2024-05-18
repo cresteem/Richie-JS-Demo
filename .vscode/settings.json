@@ -1,0 +1,10 @@
+{
+   "json.schemas": [
+      {
+         "fileMatch": [
+            "rjsconfig.json"
+         ],
+         "url": "./.vscode/richiejs-config-schema.json"
+      }
+   ]
+}

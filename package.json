@@ -1,0 +1,13 @@
+{
+  "name": "richie-js-demo",
+  "version": "1.0.0",
+  "description": "demo of Richie js",
+  "main": "index.js",
+  "repository": "https://github.com/cresteem/Richie-JS-Demo.git",
+  "author": "iamspdarsan <iamspdarsan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "@cresteem/richie-js": "^1.0.2"
+  }
+}
