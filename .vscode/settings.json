@@ -2,7 +2,13 @@
    "json.schemas": [
       {
          "fileMatch": [
-            "rjsconfig.json"
+            "rjs.config.json"
+         ],
+         "url": "./.vscode/richiejs-config-schema.json"
+      },
+      {
+         "fileMatch": [
+            "rjs.config.json"
          ],
          "url": "./.vscode/richiejs-config-schema.json"
       }

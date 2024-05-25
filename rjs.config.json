@@ -1,0 +1,13 @@
+{
+  "domainAddress": "cresteem.com",
+  "preference": {
+    "isCarousals": {
+      "movie": true,
+      "course": true,
+      "recipe": false,
+      "restaurant": false
+    },
+    "isProductVar": true
+  },
+  "siteSearchBoxFieldName": "sbox"
+}
