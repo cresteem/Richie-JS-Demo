@@ -2,15 +2,12 @@
    "json.schemas": [
       {
          "fileMatch": [
-            "rjs.config.json"
-         ],
-         "url": "./.vscode/richiejs-config-schema.json"
-      },
-      {
-         "fileMatch": [
-            "rjs.config.json"
+            ".richiejs"
          ],
          "url": "./.vscode/richiejs-config-schema.json"
       }
-   ]
+   ],
+   "material-icon-theme.files.associations": {
+      ".richiejs": "../../icons/rjs-icon"
+   }
 }

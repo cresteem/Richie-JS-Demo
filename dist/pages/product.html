@@ -8,69 +8,16 @@
       [
         {
           "@context": "https://schema.org/",
-          "@type": "ProductGroup",
+          "@type": "Product",
           "name": "Denim Jacket",
-          "description": "Product Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "url": "https://www.cresteem.com/pages/product",
-          "brand": { "@type": "Brand", "name": "XYZ Brand" },
-          "productGroupID": "b7afd5bb5c5f9b2a797601920d06ef9a",
-          "variesBy": [],
-          "hasVariant": [
-            {
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": "Denim Jacket",
-              "image": [
-                "https://example.com/image1.jpg",
-                "https://example.com/image2.jpg"
-              ],
-              "description": "Product Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "sku": "123456789",
-              "mpn": "ABC123",
-              "offers": {
-                "@type": "Offer",
-                "category": "Fees",
-                "price": 990,
-                "priceCurrency": "INR",
-                "url": "https://www.cresteem.com/pages/product",
-                "priceValidUntil": "2024-05-05T18:13:20.000Z",
-                "availability": "InStock",
-                "itemCondition": "NewCondition",
-                "hasMerchantReturnPolicy": { "@id": "#return_policy" },
-                "shippingDetails": { "@id": "#shipping_policy" }
-              }
-            },
-            {
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": "Denim Jacket",
-              "image": [
-                "https://example.com/image1.jpg",
-                "https://example.com/image2.jpg"
-              ],
-              "description": "Product Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "sku": "123456789",
-              "mpn": "ABC123",
-              "offers": {
-                "@type": "Offer",
-                "category": "Fees",
-                "price": 990,
-                "priceCurrency": "INR",
-                "url": "https://www.cresteem.com/pages/product",
-                "priceValidUntil": "2024-05-05T18:13:20.000Z",
-                "availability": "InStock",
-                "itemCondition": "UsedCondition",
-                "hasMerchantReturnPolicy": { "@id": "#return_policy" },
-                "shippingDetails": { "@id": "#shipping_policy" }
-              }
-            }
+          "image": [
+            "https://example.com/image1.jpg",
+            "https://example.com/image2.jpg"
           ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": 100,
-            "bestRating": 100,
-            "ratingCount": 2000
-          },
+          "description": "Product Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "sku": "123456789",
+          "mpn": "ABC123",
+          "brand": { "@type": "Brand", "name": "XYZ Brand" },
           "review": [
             {
               "@type": "Review",
@@ -89,7 +36,73 @@
                 "bestRating": 5
               },
               "author": { "@type": "Organization", "name": "Foogle" }
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 100,
+            "bestRating": 100,
+            "ratingCount": 1000
+          },
+          "offers": {
+            "@type": "Offer",
+            "category": "Fees",
+            "price": 990,
+            "priceCurrency": "INR",
+            "url": "https://www.cresteem.com/pages/product",
+            "priceValidUntil": "2024-05-05T17:30:08.000Z",
+            "availability": "InStock",
+            "itemCondition": "NewCondition",
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "IN",
+              "returnPolicyCategory": "MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 30,
+              "returnMethod": "ReturnByMail",
+              "returnFees": "FreeReturn"
             },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": 80,
+                "currency": "INR"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "IN"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 3,
+                  "maxValue": 5,
+                  "unitCode": "DAY"
+                }
+              }
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Denim Jacket",
+          "image": [
+            "https://example.com/image1.jpg",
+            "https://example.com/image2.jpg"
+          ],
+          "description": "Product Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "sku": "123456789",
+          "mpn": "ABC123",
+          "brand": { "@type": "Brand", "name": "XYZ Brand" },
+          "review": [
             {
               "@type": "Review",
               "reviewRating": {
@@ -108,46 +121,58 @@
               },
               "author": { "@type": "Organization", "name": "Foogle" }
             }
-          ]
-        },
-        {
-          "@context": "https://schema.org/",
-          "@id": "#shipping_policy",
-          "@type": "OfferShippingDetails",
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": 80,
-            "currency": "INR"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 100,
+            "bestRating": 100,
+            "ratingCount": 1000
           },
-          "shippingDestination": {
-            "@type": "DefinedRegion",
-            "addressCountry": "IN"
-          },
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 1,
-              "maxValue": 3,
-              "unitCode": "DAY"
+          "offers": {
+            "@type": "Offer",
+            "category": "Fees",
+            "price": 990,
+            "priceCurrency": "INR",
+            "url": "https://www.cresteem.com/pages/product",
+            "priceValidUntil": "2024-05-05T17:30:08.000Z",
+            "availability": "InStock",
+            "itemCondition": "UsedCondition",
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "IN",
+              "returnPolicyCategory": "MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 30,
+              "returnMethod": "ReturnByMail",
+              "returnFees": "FreeReturn"
             },
-            "transitTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 3,
-              "maxValue": 5,
-              "unitCode": "DAY"
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": 80,
+                "currency": "INR"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "IN"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 3,
+                  "maxValue": 5,
+                  "unitCode": "DAY"
+                }
+              }
             }
           }
-        },
-        {
-          "@context": "https://schema.org/",
-          "@id": "#return_policy",
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "IN",
-          "returnPolicyCategory": "MerchantReturnFiniteReturnWindow",
-          "merchantReturnDays": 30,
-          "returnMethod": "ReturnByMail",
-          "returnFees": "FreeReturn"
         }
       ]
     </script>

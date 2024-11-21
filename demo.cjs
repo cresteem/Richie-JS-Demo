@@ -13,4 +13,4 @@ const outputFile = join(
 //making dest folder
 mkdirSync(dirname(outputFile), { recursive: true });
 
-richie(type, inputFile, outputFile);
+richie([type], inputFile, outputFile);

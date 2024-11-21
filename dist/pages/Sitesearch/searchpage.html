@@ -6,7 +6,6 @@
     <title>Search Form</title>
 
     <script src="./client.js" type="text/javascript" defer=""></script>
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -16,15 +15,15 @@
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://www.cresteem.com/pages/Sitesearch/searchpage?q={sbox}"
+            "urlTemplate": "https://www.cresteem.com/pages/Sitesearch/searchpage?q={query}"
           },
-          "query-input": "required name=sbox"
+          "query-input": "required name=query"
         }
       }
     </script>
   </head>
 
-  <body>
+  <body class="rjs-spage">
     <h1>Search Form</h1>
     <form onsubmit="return search()">
       <label for="searchInput">Search:</label>
